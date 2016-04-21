@@ -1,5 +1,3 @@
-Programmer:Xie Jiaming 3035254571
-
 Game design:
 There are 3 pages in this othello game.
 
