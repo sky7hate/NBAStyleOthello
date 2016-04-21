@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/game_back"
+    >
+    <ImageButton
+        android:id="@+id/btn_newgame"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/button_newgame"
+        android:layout_marginBottom="13dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/btn_retract"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="115dp"
+        android:src="@drawable/button_retract"
+        android:textSize="12sp" />
+
+    <ImageButton
+        android:id="@+id/btn_hints"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:background="@android:color/transparent"
+        android:layout_marginLeft="220dp"
+        android:src="@drawable/button_hints"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:id="@+id/Scoreboard"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_retract"
+        >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/lakers_label"
+            />
+        <TextView
+            android:id="@+id/Black_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  :2"
+            android:textSize="20dp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src = "@drawable/warriors_label"
+            android:layout_marginLeft="80dp"
+            />
+        <TextView
+            android:id="@+id/White_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="  :2"
+            android:textSize="20dp"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/Turn_state"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Scoreboard"
+        android:gravity="bottom">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Turn: "
+            android:textSize="20dp"
+            />
+        <ImageView
+            android:id="@+id/Turn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/lakers_label"/>
+    </LinearLayout>
+
+    <hku.myothello.ChessBoard
+        android:id="@+id/View01"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@id/Turn_state">
+    </hku.myothello.ChessBoard>
+
+</RelativeLayout>

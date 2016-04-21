@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Othello</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_game_othello">Game_othello</string>
+    <string name="Player1_turn">Black\'s turn</string>
+    <string name="Player2_turn">White\'s turn</string>
+    <string name="title_activity_congrat">Congrat</string>
+</resources>

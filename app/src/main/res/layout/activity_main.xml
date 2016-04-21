@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true"
+    android:background="@drawable/othello_back">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+        <LinearLayout android:id="@+id/header"
+            android:layout_width="wrap_content"
+            android:layout_height="170dip"
+            android:gravity="top"
+            android:paddingTop="5dip"
+            android:paddingBottom="5dip"
+            >
+
+            <ImageView android:src="@drawable/othello_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+        </LinearLayout>
+
+        <LinearLayout android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dip"
+            android:layout_below="@id/header">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#a50000"
+                android:text="Xie Jiaming   3035254571"
+                android:textSize="20dp"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#a50000"
+                android:textSize="15dp"
+                android:text="Player1_name"/>
+            <EditText android:id="@+id/txt_User1Name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:layout_marginBottom="20dip"
+                android:textColor="#a50000"
+                android:singleLine="true"/>
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#a50000"
+                android:textSize="15dp"
+                android:text="Player2_name"/>
+            <EditText android:id="@+id/txt_User2Name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:singleLine="true"
+                android:textColor="#a50000"
+                />
+
+            <Button android:id="@+id/btn_Start"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:text="Start Game"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+</ScrollView>
